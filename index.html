@@ -29,6 +29,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .portfolio-content img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5%;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -64,7 +73,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-file-earmark-text navicon"></i> Technical Skills</a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i> Technical Skills</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
@@ -180,9 +189,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Technical Skills</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p>I specialize in laser micromachining, thin-film deposition, and semiconductor wafer processing with a focus on high-precision material engineering. My expertise spans process optimization, defect analysis, and advanced material characterization for cutting-edge microfabrication technologies.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -190,34 +197,188 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-material-handled">Materials Handled</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-characterization">Characterization Techniques</li>
+            <li data-filter=".filter-software">Software & Simulation Tools</li>
+            <li data-filter=".filter-synthesis">Synthesis Techniques</li>
+            <li data-filter=".filter-lab">Lab & Technical Competencies</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-material-handled">
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-material-handled">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/skills/semiconductor.jpg" class="img-fluid" alt="" height="10">
                 <div class="portfolio-info">
-                  <h4>Semiconductors</h4>
-                  <p>SiC wafers, photovoltaic half-cells, DSSC components</p>
-                  <!-- <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a> -->
+                  <div style="text-align: center;">
+                    <h4>Semiconductors</h4>
+                    <a href="assets/img/skills/semiconductor.jpg" style="margin-left: 14%;"
+                      title="SiC wafers, Photovoltaic wafer-si, GaAs components" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- End Portfolio Item -->
 
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-material-handled">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/glasses.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Glasses</h4>
+                    <a href="assets/img/skills/glasses.png" style="margin-left: 14%;"
+                      title="BOROFLOAT® 33, Soda-lime, RealView 1.8, RealView 1.9, CT RealView 1.9"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link ml-3"><i
+                        class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-material-handled">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/nano-material.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Nanomaterials</h4>
+                    <a href="assets/img/skills/nano-material.png" style="margin-left: 14%;"
+                      title="Fe₂O₃ nanoparticles, CNTs, Nanopolymers, CoPt, ZnO, TiO₂"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link ml-3"><i
+                        class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-material-handled">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/polymers.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Composites & Polymers</h4>
+                    <a href="assets/img/skills/polymers.jpg" style="margin-left: 14%;"
+                      title="CFRP (carbon fiber reinforced polymer), Conductive and magnetic polymer layers"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link ml-3"><i
+                        class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-characterization">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/leica.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Optical & Spectroscopy</h4>
+                    <a href="assets/img/skills/leica.png" style="margin-left: 14%;" title="FTIR (Fourier Transform Infrared Spectroscopy), UV-Vis Spectroscopy,
+                      Optical Microscopy (Leica, Keyance, Nikon), Thermal Imaging"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-characterization">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/surface-analysis.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Surface & Structural Analysis</h4>
+                    <a href="assets/img/skills/surface-analysis.png" style="margin-left: 14%;"
+                      title="XRD (X-ray Diffraction), 
+                    XRR (X-ray Reflectivity), SEM (Scanning Electron Microscopy) – assisted or supported projects, Gwyddion (AFM/MFM data visualization),VSM (Vibrating Sample Magnetometry), MFM (Magnetic Force Microscopy), AFM (Atomic Force Microscopy), Birefringence Inspection, Surface morphology and roughness analysis, Four-point Bending Test (mechanical stress analysis)"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-software">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/software.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Software</h4>
+                    <a href="assets/img/skills/software.png" style="margin-left: 14%;"
+                      title="LabVIEW (instrument control and automation), OriginLab (graphing and analysis), Gwyddion (surface scan data interpretation), LaTeX (thesis and report writing), Microsoft Office (Word, Excel, PowerPoint), Adobe Illustrator (scientific diagrams),  Quartus Prime, Tableau, VBScript/C++/Python (Programming Language)"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-software">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/simulation-tools.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Simulation Tools</h4>
+                    <a href="assets/img/skills/simulation-tools.png" style="margin-left: 14%;"
+                      title="COMSOL Multiphysics (thermal and stress modeling), MATLAB (data processing, simulation)"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-synthesis">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/synthesis.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Synthesis</h4>
+                    <a href="assets/img/skills/synthesis.png" style="margin-left: 14%;"
+                      title="DC sputtering, thin-film deposition, Co-precipitation, wet chemical, ALD, ultrasonication assisted dispersion, surface functionalization , surfactant-assisted stabilization, CVD, and PVD"
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-lab">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/laser.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Laser Systems Operation & Proccessing</h4>
+                    <a href="assets/img/skills/laser.jpg" style="margin-left: 14%;" title="Coherent Rapid LX (ultrashort pulse laser)
+                      Coherent Diamond J-Series (CO₂ laser)
+                      TRUMPF and Monaco systems (for wafer and composite cutting)
+                      Fiber laser. <br><br> Ultrashort pulse micromachining, thermal laser separation (TLS), SiC and PV wafer dicing,
+                      CFRP cutting, AR glass separation, laser marking and patterning, optical alignment."
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-2 col-md-2 portfolio-item isotope-item filter-lab">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/skills/laboratory.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div style="text-align: center;">
+                    <h4>Laboratory</h4>
+                    <a href="assets/img/skills/laboratory.png" style="margin-left: 14%;"
+                      title="Cleanroom Practices,	Glovebox Operation,	Process Optimization,	Lab Support & Documentation "
+                      class="glightbox preview-link ml-3"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
-
         </div>
-
       </div>
-
     </section>
     <!-- /Skills Section -->
 
